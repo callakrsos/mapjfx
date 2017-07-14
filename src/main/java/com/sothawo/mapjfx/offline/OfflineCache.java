@@ -172,7 +172,7 @@ public class OfflineCache {
      */
     private void setupURLStreamHandlerFactory() {
         if (!urlStreamHandlerFactoryIsInitialized) {
-            final String msg;
+            String msg;
             try {
                 URL.setURLStreamHandlerFactory(new CachingURLStreamHandlerFactory(this));
                 urlStreamHandlerFactoryIsInitialized = true;
